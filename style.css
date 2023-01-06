@@ -10,7 +10,7 @@ body {
 }
 /* Repartition des deux elements sur la hauteurs*/
 .top {
-  height: 66vh;
+  height: 480px;
   display: flex;
 }
 .down {
