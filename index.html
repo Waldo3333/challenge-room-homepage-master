@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-navlinks">
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          onclick="hamburgerOpen()"
+        >
+          <span id="ham"></span>
+          <span id="ham"></span>
+          <span id="ham"></span>
+          <div class="navlinks-container">
+            <a href="" class="link">home</a>
+            <a href="" class="link">shop</a>
+            <a href="" class="link">about</a>
+            <a href="" class="link">contact</a>
+          </div>
+        </button>
+      </div>
+
+      <div class="top">
+        <div class="topLeft">
+          <div id="topLeftOne">
+            <a href="" class="HomePage" id="room">room</a>
+            <nav class="nav">
+              <a href="" class="link">home</a>
+              <a href="" class="link">shop</a>
+              <a href="" class="link">about</a>
+              <a href="" class="link">contact</a>
+            </nav>
+            <div class="switchButton" id="buttonMobile">
+              <button>
+                <img src="./images/icon-angle-left.svg" alt="" />
+              </button>
+              <button onclick="goStepTwo()">
+                <img src="./images/icon-angle-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div id="topLeftTwo">
+            <a href="" class="HomePage" id="room2">room</a>
+            <nav class="nav">
+              <a href="" class="link">home</a>
+              <a href="" class="link">shop</a>
+              <a href="" class="link">about</a>
+              <a href="" class="link">contact</a>
+            </nav>
+            <div class="switchButton" id="buttonMobile">
+              <button onclick="backStepOne()">
+                <img src="./images/icon-angle-left.svg" alt="" />
+              </button>
+              <button onclick="goStepThree()">
+                <img src="./images/icon-angle-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div id="topLeftThree">
+            <a href="" class="HomePage" id="room3">room</a>
+            <nav class="nav">
+              <a href="" class="link">home</a>
+              <a href="" class="link">shop</a>
+              <a href="" class="link">about</a>
+              <a href="" class="link">contact</a>
+            </nav>
+            <div class="switchButton" id="buttonMobile">
+              <button onclick="backStepTwo()">
+                <img src="./images/icon-angle-left.svg" alt="" />
+              </button>
+              <button>
+                <img src="./images/icon-angle-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="topRight">
+          <div class="textTopRight">
+            <div id="textOne">
+              <h1>Discover innovative ways to decorate</h1>
+              <p class="textImmobile">
+                We provide unmatched quality, comfort, and style for property
+                owners across the country. Our experts combine form and function
+                in bringing your vision to life. Create a room in your own style
+                with our collection and make your property a reflection of you
+                and what you love.
+              </p>
+              <button class="shopNow">
+                Shop now
+                <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+              <div class="switchButton" id="buttonDesktop">
+                <button>
+                  <img src="./images/icon-angle-left.svg" alt="" />
+                </button>
+                <button onclick="goStepTwo()">
+                  <img src="./images/icon-angle-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div id="textTwo">
+              <h1>We are available all across the globe</h1>
+              <p class="textImmobile">
+                With stores all over the world, it's easy for you to find
+                furniture for your home or place of business. Locally, we’re in
+                most major cities throughout the country. Find the branch
+                nearest you using our store locator. Any questions? Don't
+                hesitate to contact us today.
+              </p>
+              <button class="shopNow">
+                Shop now <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+              <div class="switchButton" id="buttonDesktop">
+                <button onclick="backStepOne()">
+                  <img src="./images/icon-angle-left.svg" alt="" />
+                </button>
+                <button onclick="goStepThree()">
+                  <img src="./images/icon-angle-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div id="textThree">
+              <h1>Manufactured with the best materials</h1>
+              <p class="textImmobile">
+                Our modern furniture store provide a high level of quality. Our
+                company has invested in advanced technology to ensure that every
+                product is made as perfect and as consistent as possible. With
+                three decades of experience in this industry, we understand what
+                customers want for their home and office.
+              </p>
+
+              <button class="shopNow">
+                Shop now <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+              <div class="switchButton" id="buttonDesktop">
+                <button onclick="backStepTwo()">
+                  <img src="./images/icon-angle-left.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./images/icon-angle-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="down">
+        <div class="downLeft"></div>
+        <div class="downMiddle">
+          <h3>About our furniture</h3>
+
+          <p>
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+        <div class="downRight"></div>
+      </div>
+      <div id="opacity"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

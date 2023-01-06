@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+/* Repartition des deux elements sur la hauteurs*/
+.top {
+  height: 66vh;
+  display: flex;
+}
+.down {
+  height: 34vh;
+  display: flex;
+}
+/* Placement des divs sur la largeur */
+.topLeft {
+  display: flex;
+  width: 58%;
+}
+#topLeftOne {
+  display: flex;
+  width: 100%;
+  background-image: url(./images/desktop-image-hero-1.jpg);
+}
+#topLeftTwo {
+  display: none;
+  width: 100%;
+  background-image: url(./images/desktop-image-hero-2.jpg);
+}
+#topLeftThree {
+  display: none;
+  width: 100%;
+  background-image: url(./images/desktop-image-hero-3.jpg);
+}
+
+.topRight {
+  position: relative;
+  width: 600px;
+}
+.downLeft {
+  width: 31%;
+  background-image: url(./images/image-about-dark.jpg);
+}
+.downMiddle {
+  margin: 25px 40px 30px 50px;
+  width: 547px;
+}
+.downRight {
+  width: 500px;
+  background-image: url(./images/image-about-light.jpg);
+}
+
+/* Placement de la nav bar et style des liens*/
+.hamburger {
+  display: none;
+}
+.nav {
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 100px;
+  align-items: center;
+}
+.HomePage {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  margin-left: 50px;
+  display: inline-block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+.link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: 15%;
+  bottom: -10px;
+  width: 70%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: rgb(255, 255, 255);
+  transition: transform 0.3s ease-out;
+}
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+/*Placement et style des boutons GAUCHE DROITE*/
+#buttonMobile {
+  display: none;
+}
+.switchButton {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+}
+
+.switchButton button {
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  padding: 0px;
+  margin: -3px;
+  cursor: pointer;
+}
+
+.switchButton button:hover {
+  background-color: hsl(0, 0%, 27%);
+}
+
+/* Placement du TEXTE au centre de son parent en HAUT ET EN BAS */
+.textTopRight {
+  margin: 60px 70px 70px 90px;
+}
+.textTopRight h1 {
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 45px;
+  letter-spacing: -1px;
+}
+
+.textTopRight p {
+  font-size: 16px;
+  color: hsl(0, 0%, 63%);
+  line-height: 20px;
+}
+
+#opacity {
+  display: none;
+}
+.shopNow {
+  border: none;
+  background-color: white;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-left: 0px;
+  cursor: pointer;
+  letter-spacing: 8px;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+.shopNow:hover {
+  color: hsl(0, 0%, 63%);
+  filter: grayscale(100%);
+}
+.shopNow img:hover {
+  filter: grayscale(100%);
+}
+
+.downMiddle h3 {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.downMiddle p {
+  font-size: 15px;
+  color: hsl(0, 0%, 63%);
+  line-height: 20px;
+}
+
+.textImmobile {
+  height: 15vh;
+}
+
+/* Planquer les DIV avec les AUTRES TEXTES*/
+
+#textTwo {
+  display: none;
+  flex-direction: column;
+}
+
+#textThree {
+  display: none;
+}
